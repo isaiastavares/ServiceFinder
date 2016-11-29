@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3F3DA7AE1DEE4C5E00F5CBD5 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3DA7AD1DEE4C5E00F5CBD5 /* File.swift */; };
 		3FB696CE1DEE47AF00BCCAD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB696CD1DEE47AF00BCCAD3 /* AppDelegate.swift */; };
 		3FB696D01DEE47AF00BCCAD3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB696CF1DEE47AF00BCCAD3 /* ViewController.swift */; };
 		3FB696D31DEE47AF00BCCAD3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FB696D11DEE47AF00BCCAD3 /* Main.storyboard */; };
@@ -17,7 +16,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3F3DA7AD1DEE4C5E00F5CBD5 /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		3FB696CA1DEE47AF00BCCAD3 /* ServiceFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ServiceFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FB696CD1DEE47AF00BCCAD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FB696CF1DEE47AF00BCCAD3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -65,7 +63,6 @@
 				3FB696D91DEE47AF00BCCAD3 /* LaunchScreen.storyboard */,
 				3FB696DC1DEE47AF00BCCAD3 /* Info.plist */,
 				3FB696D41DEE47AF00BCCAD3 /* ServiceFinder.xcdatamodeld */,
-				3F3DA7AD1DEE4C5E00F5CBD5 /* File.swift */,
 			);
 			path = ServiceFinder;
 			sourceTree = "<group>";
@@ -142,7 +139,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FB696D01DEE47AF00BCCAD3 /* ViewController.swift in Sources */,
-				3F3DA7AE1DEE4C5E00F5CBD5 /* File.swift in Sources */,
 				3FB696D61DEE47AF00BCCAD3 /* ServiceFinder.xcdatamodeld in Sources */,
 				3FB696CE1DEE47AF00BCCAD3 /* AppDelegate.swift in Sources */,
 			);
