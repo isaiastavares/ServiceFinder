@@ -17,7 +17,7 @@ class ServicoTableViewCell: UITableViewCell {
 
     @IBOutlet weak var categoria: UILabel!
     
-    @IBOutlet weak var descricao: UITextView!
+    @IBOutlet weak var descricao: UILabel!
     
     @IBOutlet weak var valor: UILabel!
 }

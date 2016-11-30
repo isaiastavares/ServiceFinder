@@ -10,13 +10,13 @@
         <!--Serviços-->
         <scene sceneID="vx9-f7-CwZ">
             <objects>
-                <tableViewController title="Serviços" id="9Wd-5O-80T" customClass="ServicoTableViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="234" sectionHeaderHeight="28" sectionFooterHeight="28" id="Uo6-Hk-rDJ">
+                <tableViewController title="Serviços" id="9Wd-5O-80T" customClass="ServicoTableViewController" customModule="ServiceFinder" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="153" sectionHeaderHeight="28" sectionFooterHeight="28" id="Uo6-Hk-rDJ">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="234" id="tpT-Jo-Xv3" customClass="ServicoTableViewCell" customModule="ServiceFinder" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="servicoIdentifier" rowHeight="153" id="tpT-Jo-Xv3" customClass="ServicoTableViewCell" customModule="ServiceFinder">
                                 <rect key="frame" x="0.0" y="92" width="600" height="234"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tpT-Jo-Xv3" id="xo7-y1-5Q9" userLabel="Item Content View">
@@ -66,32 +66,32 @@
                                                                 <rect key="frame" x="0.0" y="29" width="67" height="18"/>
                                                             </variation>
                                                         </label>
-                                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="Descrição" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="pFU-Ta-PAo" userLabel="Descrição">
-                                                            <rect key="frame" x="129" y="0.0" width="240" height="100"/>
-                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descrição" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ugI-I6-wG4">
+                                                            <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                            <nil key="highlightedColor"/>
                                                             <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                                                <rect key="frame" x="0.0" y="55" width="240" height="126"/>
+                                                                <rect key="frame" x="0.0" y="55" width="69" height="18"/>
                                                             </variation>
-                                                        </textView>
+                                                        </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Valor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7qB-ga-GIu">
                                                             <rect key="frame" x="377" y="0.0" width="35" height="100"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                             <color key="textColor" red="0.44216042757034302" green="0.96976667642593384" blue="0.023223858326673508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
                                                             <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                                                <rect key="frame" x="0.0" y="189" width="35" height="18"/>
+                                                                <rect key="frame" x="0.0" y="81" width="35" height="18"/>
                                                             </variation>
                                                         </label>
                                                     </subviews>
                                                     <variation key="heightClass=regular-widthClass=compact" alignment="top" axis="vertical" misplaced="YES">
-                                                        <rect key="frame" x="108" y="0.0" width="276" height="207"/>
+                                                        <rect key="frame" x="108" y="0.0" width="276" height="99"/>
                                                     </variation>
                                                 </stackView>
                                             </subviews>
                                             <variation key="heightClass=regular-widthClass=compact" alignment="top" misplaced="YES">
-                                                <rect key="frame" x="8" y="17" width="384" height="207"/>
+                                                <rect key="frame" x="8" y="17" width="384" height="100"/>
                                             </variation>
                                         </stackView>
                                     </subviews>
@@ -117,7 +117,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="categoria" destination="eFE-LB-j5o" id="Wds-mY-aiZ"/>
-                                    <outlet property="descrição" destination="pFU-Ta-PAo" id="7ne-Km-o8d"/>
+                                    <outlet property="descricao" destination="ugI-I6-wG4" id="KA0-DQ-g4Y"/>
                                     <outlet property="imagem" destination="F7I-Yv-5gn" id="67d-01-KY1"/>
                                     <outlet property="nome" destination="Fh3-M4-vvn" id="Cjq-d2-t0r"/>
                                     <outlet property="valor" destination="7qB-ga-GIu" id="Gcr-a6-nDQ"/>

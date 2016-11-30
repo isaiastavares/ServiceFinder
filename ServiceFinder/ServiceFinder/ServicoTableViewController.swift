@@ -10,7 +10,7 @@ import UIKit
 
 class ServicoTableViewController: UITableViewController {
     
-    var servicos: [Servico]?
+    var servicos = [Servico]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,13 +38,21 @@ class ServicoTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return (self.servicos?.count)!
+        return self.servicos.count
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
 
         let cell = tableView.dequeueReusableCellWithIdentifier("servicoIdentifier", forIndexPath: indexPath) as! ServicoTableViewCell
 
+        let servico = self.servicos[indexPath.row]
+        
+        cell.imagem.image = UIImage(named: servico.usuario.imagemPerfil)
+        cell.nome.text = servico.usuario.nome
+        cell.categoria.text = servico.categoria
+        cell.descricao.text = servico.descricao
+        cell.valor.text = "\(servico.valor)"
+        
         return cell
     }
 
