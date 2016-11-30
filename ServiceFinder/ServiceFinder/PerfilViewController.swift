@@ -16,26 +16,24 @@ class PerfilViewController: UIViewController {
     
     @IBOutlet weak var email: UILabel!
     
-    @IBOutlet weak var telefone: UIStackView!
+    @IBOutlet weak var telefone: UILabel!
     
     @IBOutlet weak var cpf: UILabel!
     
     @IBOutlet weak var endereco: UILabel!
     
-    
-    
+    let usuario = Usuario.getUsuario()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        imagem.image = UIImage(named: self.usuario.imagemPerfil)
+        nome.text = usuario.nome
+        email.text = usuario.email
+        telefone.text = usuario.telefone
+        cpf.text = usuario.cpf
+        endereco.text = usuario.endereco.toString()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
 
     /*
     // MARK: - Navigation
