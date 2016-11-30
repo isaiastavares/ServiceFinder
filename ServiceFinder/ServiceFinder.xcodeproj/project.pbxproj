@@ -12,7 +12,12 @@
 		3FB696D61DEE47AF00BCCAD3 /* ServiceFinder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3FB696D41DEE47AF00BCCAD3 /* ServiceFinder.xcdatamodeld */; };
 		3FB696D81DEE47AF00BCCAD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FB696D71DEE47AF00BCCAD3 /* Assets.xcassets */; };
 		3FB696DB1DEE47AF00BCCAD3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FB696D91DEE47AF00BCCAD3 /* LaunchScreen.storyboard */; };
-		3FB696E81DEE4D1200BCCAD3 /* ServicosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB696E71DEE4D1200BCCAD3 /* ServicosTableViewController.swift */; };
+		3FB696E81DEE4D1200BCCAD3 /* ServicoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB696E71DEE4D1200BCCAD3 /* ServicoTableViewController.swift */; };
+		3FB877F61DEF6E0100795ED3 /* Servico.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB877F51DEF6E0100795ED3 /* Servico.swift */; };
+		3FB877F81DEF6E2E00795ED3 /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB877F71DEF6E2E00795ED3 /* Usuario.swift */; };
+		3FB877FA1DEF6E6800795ED3 /* Endereco.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB877F91DEF6E6800795ED3 /* Endereco.swift */; };
+		3FB877FC1DEF6E7D00795ED3 /* Contrato.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB877FB1DEF6E7D00795ED3 /* Contrato.swift */; };
+		3FB877FE1DEF704500795ED3 /* ServicoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB877FD1DEF704500795ED3 /* ServicoTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +28,12 @@
 		3FB696D71DEE47AF00BCCAD3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3FB696DA1DEE47AF00BCCAD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3FB696DC1DEE47AF00BCCAD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3FB696E71DEE4D1200BCCAD3 /* ServicosTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicosTableViewController.swift; sourceTree = "<group>"; };
+		3FB696E71DEE4D1200BCCAD3 /* ServicoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicoTableViewController.swift; sourceTree = "<group>"; };
+		3FB877F51DEF6E0100795ED3 /* Servico.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Servico.swift; sourceTree = "<group>"; };
+		3FB877F71DEF6E2E00795ED3 /* Usuario.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Usuario.swift; sourceTree = "<group>"; };
+		3FB877F91DEF6E6800795ED3 /* Endereco.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endereco.swift; sourceTree = "<group>"; };
+		3FB877FB1DEF6E7D00795ED3 /* Contrato.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contrato.swift; sourceTree = "<group>"; };
+		3FB877FD1DEF704500795ED3 /* ServicoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicoTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +88,10 @@
 		3FB696E31DEE4C6D00BCCAD3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				3FB877F51DEF6E0100795ED3 /* Servico.swift */,
+				3FB877F71DEF6E2E00795ED3 /* Usuario.swift */,
+				3FB877F91DEF6E6800795ED3 /* Endereco.swift */,
+				3FB877FB1DEF6E7D00795ED3 /* Contrato.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -85,7 +99,8 @@
 		3FB696E51DEE4C8000BCCAD3 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				3FB696E71DEE4D1200BCCAD3 /* ServicosTableViewController.swift */,
+				3FB696E71DEE4D1200BCCAD3 /* ServicoTableViewController.swift */,
+				3FB877FD1DEF704500795ED3 /* ServicoTableViewCell.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -170,9 +185,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FB877FA1DEF6E6800795ED3 /* Endereco.swift in Sources */,
 				3FB696D61DEE47AF00BCCAD3 /* ServiceFinder.xcdatamodeld in Sources */,
 				3FB696CE1DEE47AF00BCCAD3 /* AppDelegate.swift in Sources */,
-				3FB696E81DEE4D1200BCCAD3 /* ServicosTableViewController.swift in Sources */,
+				3FB877FE1DEF704500795ED3 /* ServicoTableViewCell.swift in Sources */,
+				3FB696E81DEE4D1200BCCAD3 /* ServicoTableViewController.swift in Sources */,
+				3FB877F81DEF6E2E00795ED3 /* Usuario.swift in Sources */,
+				3FB877FC1DEF6E7D00795ED3 /* Contrato.swift in Sources */,
+				3FB877F61DEF6E0100795ED3 /* Servico.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

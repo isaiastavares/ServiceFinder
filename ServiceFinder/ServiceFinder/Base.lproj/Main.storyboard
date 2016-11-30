@@ -10,13 +10,13 @@
         <!--Serviços-->
         <scene sceneID="vx9-f7-CwZ">
             <objects>
-                <tableViewController title="Serviços" id="9Wd-5O-80T" customClass="ServicosTableViewController" customModule="ServiceFinder" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Serviços" id="9Wd-5O-80T" customClass="ServicoTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="126" sectionHeaderHeight="28" sectionFooterHeight="28" id="Uo6-Hk-rDJ">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="126" id="tpT-Jo-Xv3">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="126" id="tpT-Jo-Xv3" customClass="ServicoTableViewCell" customModule="ServiceFinder" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="92" width="600" height="126"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tpT-Jo-Xv3" id="xo7-y1-5Q9">
