@@ -11,106 +11,117 @@
         <scene sceneID="vx9-f7-CwZ">
             <objects>
                 <tableViewController title="Serviços" id="9Wd-5O-80T" customClass="ServicoTableViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="126" sectionHeaderHeight="28" sectionFooterHeight="28" id="Uo6-Hk-rDJ">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="234" sectionHeaderHeight="28" sectionFooterHeight="28" id="Uo6-Hk-rDJ">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="126" id="tpT-Jo-Xv3" customClass="ServicoTableViewCell" customModule="ServiceFinder" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="234" id="tpT-Jo-Xv3" customClass="ServicoTableViewCell" customModule="ServiceFinder" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="92" width="600" height="126"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tpT-Jo-Xv3" id="xo7-y1-5Q9">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tpT-Jo-Xv3" id="xo7-y1-5Q9" userLabel="Item Content View">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="125.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="e87-lk-gCh">
-                                            <rect key="frame" x="-20" y="-20" width="315" height="119"/>
+                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="zeP-9s-Zup">
+                                            <rect key="frame" x="-12" y="-3" width="388" height="247"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7fM-Ij-IFo">
-                                                    <rect key="frame" x="0.0" y="0.0" width="165" height="119"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="F7I-Yv-5gn">
+                                                    <rect key="frame" x="20" y="20" width="100" height="100"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="50" id="cnK-Jh-DG0">
-                                                            <variation key="heightClass=regular-widthClass=compact" constant="100"/>
-                                                        </constraint>
-                                                        <constraint firstAttribute="height" constant="50" id="tfW-UR-jXl">
-                                                            <variation key="heightClass=regular-widthClass=compact" constant="100"/>
-                                                        </constraint>
+                                                        <constraint firstAttribute="height" constant="100" id="Qpy-Gc-P2z"/>
+                                                        <constraint firstAttribute="width" constant="100" id="dr7-GJ-rpn"/>
                                                     </constraints>
                                                     <variation key="default">
                                                         <mask key="constraints">
-                                                            <exclude reference="cnK-Jh-DG0"/>
-                                                            <exclude reference="tfW-UR-jXl"/>
+                                                            <exclude reference="Qpy-Gc-P2z"/>
+                                                            <exclude reference="dr7-GJ-rpn"/>
                                                         </mask>
                                                     </variation>
-                                                    <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                    <variation key="heightClass=regular-widthClass=compact">
                                                         <mask key="constraints">
-                                                            <include reference="cnK-Jh-DG0"/>
-                                                            <include reference="tfW-UR-jXl"/>
+                                                            <include reference="Qpy-Gc-P2z"/>
+                                                            <include reference="dr7-GJ-rpn"/>
                                                         </mask>
                                                     </variation>
                                                 </imageView>
-                                                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="h0e-4D-Unu">
-                                                    <rect key="frame" x="173" y="0.0" width="142" height="119"/>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="bCS-ce-4le" userLabel="Conteudo Stack View">
+                                                    <rect key="frame" x="128" y="20" width="240" height="207"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zid-VD-PiC">
-                                                            <rect key="frame" x="0.0" y="0.0" width="42" height="119"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fh3-M4-vvn">
+                                                            <rect key="frame" x="20" y="20" width="46" height="23"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                            <color key="textColor" red="0.29651868343353271" green="0.18516352772712708" blue="0.062102906405925751" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
                                                             <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                                                <rect key="frame" x="0.0" y="0.0" width="276" height="21"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="46" height="21"/>
                                                             </variation>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S7x-ml-siW">
-                                                            <rect key="frame" x="50" y="0.0" width="42" height="119"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Categoria" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eFE-LB-j5o">
+                                                            <rect key="frame" x="20" y="44" width="75" height="21"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                            <color key="textColor" red="0.91137701272964478" green="0.88374513387680054" blue="0.44182264804840088" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
                                                             <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                                                <rect key="frame" x="0.0" y="29" width="276" height="21"/>
+                                                                <rect key="frame" x="0.0" y="29" width="67" height="18"/>
                                                             </variation>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iBR-uN-rQ9">
-                                                            <rect key="frame" x="100" y="0.0" width="42" height="119"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Descrição" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="pFU-Ta-PAo" userLabel="Descrição">
+                                                            <rect key="frame" x="20" y="68" width="240" height="81"/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                            <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                                                <rect key="frame" x="0.0" y="55" width="240" height="126"/>
+                                                            </variation>
+                                                        </textView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Valor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7qB-ga-GIu">
+                                                            <rect key="frame" x="23" y="157" width="39" height="21"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                            <color key="textColor" red="0.44216042757034302" green="0.96976667642593384" blue="0.023223858326673508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
                                                             <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                                                <rect key="frame" x="0.0" y="57" width="276" height="21"/>
+                                                                <rect key="frame" x="0.0" y="189" width="35" height="18"/>
                                                             </variation>
                                                         </label>
                                                     </subviews>
-                                                    <variation key="heightClass=regular-widthClass=compact" axis="vertical" misplaced="YES">
-                                                        <rect key="frame" x="108" y="0.0" width="276" height="78"/>
+                                                    <variation key="heightClass=regular-widthClass=compact" alignment="top" axis="vertical" misplaced="YES">
+                                                        <rect key="frame" x="108" y="0.0" width="276" height="207"/>
                                                     </variation>
                                                 </stackView>
                                             </subviews>
                                             <variation key="heightClass=regular-widthClass=compact" alignment="top" misplaced="YES">
-                                                <rect key="frame" x="8" y="16" width="384" height="100"/>
+                                                <rect key="frame" x="8" y="17" width="384" height="207"/>
                                             </variation>
                                         </stackView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="trailingMargin" secondItem="e87-lk-gCh" secondAttribute="trailing" id="5Jw-n8-EtJ"/>
-                                        <constraint firstItem="e87-lk-gCh" firstAttribute="leading" secondItem="xo7-y1-5Q9" secondAttribute="leadingMargin" id="MYT-Xo-anW"/>
-                                        <constraint firstItem="e87-lk-gCh" firstAttribute="top" secondItem="xo7-y1-5Q9" secondAttribute="topMargin" constant="8" id="pUY-Oz-9dv"/>
+                                        <constraint firstItem="zeP-9s-Zup" firstAttribute="top" secondItem="xo7-y1-5Q9" secondAttribute="topMargin" constant="9" id="5Ur-4O-TZD"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="zeP-9s-Zup" secondAttribute="trailing" id="A8V-Mr-q2U"/>
+                                        <constraint firstItem="zeP-9s-Zup" firstAttribute="leading" secondItem="xo7-y1-5Q9" secondAttribute="leadingMargin" id="pKv-An-wyb"/>
                                     </constraints>
                                     <variation key="default">
                                         <mask key="constraints">
-                                            <exclude reference="5Jw-n8-EtJ"/>
-                                            <exclude reference="MYT-Xo-anW"/>
-                                            <exclude reference="pUY-Oz-9dv"/>
+                                            <exclude reference="5Ur-4O-TZD"/>
+                                            <exclude reference="A8V-Mr-q2U"/>
+                                            <exclude reference="pKv-An-wyb"/>
                                         </mask>
                                     </variation>
                                     <variation key="heightClass=regular-widthClass=compact">
                                         <mask key="constraints">
-                                            <include reference="5Jw-n8-EtJ"/>
-                                            <include reference="MYT-Xo-anW"/>
-                                            <include reference="pUY-Oz-9dv"/>
+                                            <include reference="5Ur-4O-TZD"/>
+                                            <include reference="A8V-Mr-q2U"/>
+                                            <include reference="pKv-An-wyb"/>
                                         </mask>
                                     </variation>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="categoria" destination="eFE-LB-j5o" id="Wds-mY-aiZ"/>
+                                    <outlet property="descrição" destination="pFU-Ta-PAo" id="7ne-Km-o8d"/>
+                                    <outlet property="imagem" destination="F7I-Yv-5gn" id="67d-01-KY1"/>
+                                    <outlet property="nome" destination="Fh3-M4-vvn" id="Cjq-d2-t0r"/>
+                                    <outlet property="valor" destination="7qB-ga-GIu" id="Gcr-a6-nDQ"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -373,6 +384,9 @@
                         </variation>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="profile" selectedImage="profile-roxo" id="lXl-L6-GUD"/>
+                    <navigationItem key="navigationItem" title="Meu Perfil" id="4Df-wv-ZnT">
+                        <barButtonItem key="rightBarButtonItem" title="Editar" id="JtB-tz-SeP"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="cpf" destination="w1g-P1-VQz" id="6go-VQ-iFN"/>
                         <outlet property="email" destination="bae-NT-1xf" id="rW6-5Z-cby"/>
