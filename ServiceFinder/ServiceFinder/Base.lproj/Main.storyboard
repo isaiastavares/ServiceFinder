@@ -42,7 +42,8 @@
                                                             <exclude reference="tfW-UR-jXl"/>
                                                         </mask>
                                                     </variation>
-                                                    <variation key="heightClass=regular-widthClass=compact">
+                                                    <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                                         <mask key="constraints">
                                                             <include reference="cnK-Jh-DG0"/>
                                                             <include reference="tfW-UR-jXl"/>
@@ -178,7 +179,7 @@
         <!--Perfil-->
         <scene sceneID="eDF-2r-x83">
             <objects>
-                <viewController title="Perfil" id="4rK-jQ-Ghh" sceneMemberID="viewController">
+                <viewController title="Perfil" id="4rK-jQ-Ghh" customClass="PerfilViewController" customModule="ServiceFinder" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="kvp-e5-kat"/>
                         <viewControllerLayoutGuide type="bottom" id="uMx-Jk-X2F"/>
@@ -187,75 +188,199 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qIs-0D-PPL">
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RFi-ZY-dTb" userLabel="Imagem - Perfil">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="4zQ-V0-aaA">
-                                        <variation key="heightClass=regular-widthClass=compact" constant="150"/>
-                                    </constraint>
-                                    <constraint firstAttribute="height" constant="100" id="Qmb-0c-2NB">
-                                        <variation key="heightClass=regular-widthClass=compact" constant="150"/>
-                                    </constraint>
+                                    <constraint firstAttribute="height" constant="150" id="P3L-mQ-gBx"/>
+                                    <constraint firstAttribute="width" constant="150" id="a5w-lR-p3L"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="4zQ-V0-aaA"/>
-                                        <exclude reference="Qmb-0c-2NB"/>
+                                        <exclude reference="P3L-mQ-gBx"/>
+                                        <exclude reference="a5w-lR-p3L"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=compact">
                                     <mask key="constraints">
-                                        <include reference="4zQ-V0-aaA"/>
-                                        <include reference="Qmb-0c-2NB"/>
+                                        <include reference="P3L-mQ-gBx"/>
+                                        <include reference="a5w-lR-p3L"/>
                                     </mask>
                                 </variation>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YAa-Wa-pfT">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UDC-6I-m5g">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="3EG-lb-9IV" userLabel="Campos Stack View">
+                                <rect key="frame" x="0.0" y="239" width="775" height="21"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="bF2-dM-Jnd" userLabel="Email Stack View">
+                                        <rect key="frame" x="0.0" y="0.0" width="158" height="21"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Email:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lHU-qg-9zn">
+                                                <rect key="frame" x="0.0" y="0.0" width="46" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="0.0" width="46" height="21"/>
+                                                </variation>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Email Usuário" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bae-NT-1xf">
+                                                <rect key="frame" x="54" y="0.0" width="105" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                                    <rect key="frame" x="54" y="0.0" width="105" height="21"/>
+                                                </variation>
+                                            </label>
+                                        </subviews>
+                                        <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="0.0" width="158" height="21"/>
+                                        </variation>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="IOo-Vd-CFA" userLabel="Telefone Stack View">
+                                        <rect key="frame" x="174" y="0.0" width="208" height="21"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Telefone:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AWR-ZX-BfJ">
+                                                <rect key="frame" x="0.0" y="0.0" width="71" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="0.0" width="71" height="21"/>
+                                                </variation>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Telefone Usuário" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aul-Ft-L6f">
+                                                <rect key="frame" x="79" y="0.0" width="129" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                                    <rect key="frame" x="79" y="0.0" width="129" height="21"/>
+                                                </variation>
+                                            </label>
+                                        </subviews>
+                                        <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="37" width="208" height="21"/>
+                                        </variation>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="cQB-jm-J5s" userLabel="CPF Stack View">
+                                        <rect key="frame" x="398" y="0.0" width="140" height="21"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="CPF:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DNv-mf-7YL">
+                                                <rect key="frame" x="0.0" y="0.0" width="37" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="0.0" width="37" height="21"/>
+                                                </variation>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="CPF Usuário" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w1g-P1-VQz">
+                                                <rect key="frame" x="45" y="0.0" width="95" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="45" y="0.0" width="95" height="21"/>
+                                                </variation>
+                                            </label>
+                                        </subviews>
+                                        <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="73" width="140" height="21"/>
+                                        </variation>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="xxR-7X-em6" userLabel="Endereço Stack View">
+                                        <rect key="frame" x="553" y="0.0" width="222" height="21"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Endereço:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ag6-hu-QdA">
+                                                <rect key="frame" x="0.0" y="0.0" width="78" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="0.0" width="78" height="21"/>
+                                                </variation>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Endereço Usuário" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sEK-76-je4">
+                                                <rect key="frame" x="86" y="0.0" width="136" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                                    <rect key="frame" x="86" y="0.0" width="136" height="21"/>
+                                                </variation>
+                                            </label>
+                                        </subviews>
+                                        <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="110" width="222" height="21"/>
+                                        </variation>
+                                    </stackView>
+                                </subviews>
+                                <variation key="heightClass=regular-widthClass=compact" alignment="top" axis="vertical" misplaced="YES">
+                                    <rect key="frame" x="20" y="331" width="360" height="130"/>
+                                </variation>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="YAa-Wa-pfT" firstAttribute="top" secondItem="qIs-0D-PPL" secondAttribute="bottom" constant="8" id="14Y-V2-bgd"/>
-                            <constraint firstItem="YAa-Wa-pfT" firstAttribute="leading" secondItem="rDy-uo-1Ic" secondAttribute="leadingMargin" id="3jt-m4-hki"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="YAa-Wa-pfT" secondAttribute="trailing" id="4cU-2U-bgc"/>
-                            <constraint firstItem="qIs-0D-PPL" firstAttribute="top" secondItem="kvp-e5-kat" secondAttribute="bottom" constant="8" id="Bc2-x9-a5u"/>
-                            <constraint firstItem="YAa-Wa-pfT" firstAttribute="centerX" secondItem="rDy-uo-1Ic" secondAttribute="centerX" id="VZa-qA-ybW"/>
-                            <constraint firstItem="qIs-0D-PPL" firstAttribute="centerX" secondItem="rDy-uo-1Ic" secondAttribute="centerX" id="fPa-Qd-UZo"/>
+                            <constraint firstItem="3EG-lb-9IV" firstAttribute="leading" secondItem="rDy-uo-1Ic" secondAttribute="leadingMargin" id="8v3-Dz-5Mp"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3EG-lb-9IV" secondAttribute="trailing" id="CLc-xf-WhJ"/>
+                            <constraint firstItem="3EG-lb-9IV" firstAttribute="top" secondItem="UDC-6I-m5g" secondAttribute="bottom" constant="8" id="DOn-Ez-Iri">
+                                <variation key="heightClass=regular-widthClass=compact" constant="80"/>
+                            </constraint>
+                            <constraint firstItem="RFi-ZY-dTb" firstAttribute="top" secondItem="kvp-e5-kat" secondAttribute="bottom" constant="8" id="EAp-6q-wch"/>
+                            <constraint firstItem="UDC-6I-m5g" firstAttribute="leading" secondItem="rDy-uo-1Ic" secondAttribute="leadingMargin" id="N5b-8V-Jt6"/>
+                            <constraint firstItem="RFi-ZY-dTb" firstAttribute="centerX" secondItem="rDy-uo-1Ic" secondAttribute="centerX" id="T0C-eV-VF6"/>
+                            <constraint firstItem="UDC-6I-m5g" firstAttribute="top" secondItem="RFi-ZY-dTb" secondAttribute="bottom" constant="8" id="oS1-ej-phL"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="UDC-6I-m5g" secondAttribute="trailing" id="xwC-8y-rDJ"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="qIs-0D-PPL"/>
-                                <exclude reference="YAa-Wa-pfT"/>
+                                <exclude reference="RFi-ZY-dTb"/>
+                                <exclude reference="UDC-6I-m5g"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="14Y-V2-bgd"/>
-                                <exclude reference="3jt-m4-hki"/>
-                                <exclude reference="4cU-2U-bgc"/>
-                                <exclude reference="VZa-qA-ybW"/>
-                                <exclude reference="Bc2-x9-a5u"/>
-                                <exclude reference="fPa-Qd-UZo"/>
+                                <exclude reference="N5b-8V-Jt6"/>
+                                <exclude reference="oS1-ej-phL"/>
+                                <exclude reference="xwC-8y-rDJ"/>
+                                <exclude reference="EAp-6q-wch"/>
+                                <exclude reference="T0C-eV-VF6"/>
+                                <exclude reference="8v3-Dz-5Mp"/>
+                                <exclude reference="CLc-xf-WhJ"/>
+                                <exclude reference="DOn-Ez-Iri"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
-                                <include reference="qIs-0D-PPL"/>
-                                <include reference="YAa-Wa-pfT"/>
+                                <include reference="RFi-ZY-dTb"/>
+                                <include reference="UDC-6I-m5g"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="14Y-V2-bgd"/>
-                                <include reference="3jt-m4-hki"/>
-                                <include reference="4cU-2U-bgc"/>
-                                <include reference="VZa-qA-ybW"/>
-                                <include reference="Bc2-x9-a5u"/>
-                                <include reference="fPa-Qd-UZo"/>
+                                <include reference="N5b-8V-Jt6"/>
+                                <include reference="oS1-ej-phL"/>
+                                <include reference="xwC-8y-rDJ"/>
+                                <include reference="EAp-6q-wch"/>
+                                <include reference="T0C-eV-VF6"/>
+                                <include reference="8v3-Dz-5Mp"/>
+                                <include reference="CLc-xf-WhJ"/>
+                                <include reference="DOn-Ez-Iri"/>
                             </mask>
                         </variation>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="profile" selectedImage="profile-roxo" id="lXl-L6-GUD"/>
+                    <connections>
+                        <outlet property="cpf" destination="w1g-P1-VQz" id="6go-VQ-iFN"/>
+                        <outlet property="email" destination="bae-NT-1xf" id="rW6-5Z-cby"/>
+                        <outlet property="endereco" destination="sEK-76-je4" id="48w-SH-0hz"/>
+                        <outlet property="imagem" destination="RFi-ZY-dTb" id="6SR-R0-db9"/>
+                        <outlet property="nome" destination="UDC-6I-m5g" id="zre-QU-lAE"/>
+                        <outlet property="telefone" destination="3EG-lb-9IV" id="eIA-be-7Hf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f98-Nd-zMo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

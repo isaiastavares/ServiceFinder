@@ -10,6 +10,21 @@ import UIKit
 
 class PerfilViewController: UIViewController {
 
+    @IBOutlet weak var imagem: UIImageView!
+    
+    @IBOutlet weak var nome: UILabel!
+    
+    @IBOutlet weak var email: UILabel!
+    
+    @IBOutlet weak var telefone: UIStackView!
+    
+    @IBOutlet weak var cpf: UILabel!
+    
+    @IBOutlet weak var endereco: UILabel!
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -31,5 +46,8 @@ class PerfilViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    
+    
+    
+    
 }
