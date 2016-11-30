@@ -15,7 +15,21 @@ class MinhaAgendaTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let usuarioAtual = Usuario.getUsuario()
+        
         self.contratos = Contrato.getLista()
+        
+        var minhasContratacoes: [Contrato]?
+        var meusServicos: [Contrato]?
+        
+        for contrato in self.contratos!{
+            if (contrato.contratante === usuarioAtual){
+                minhasContratacoes?.append(contrato)
+            }
+            if (contrato.servico.usuario === usuarioAtual){
+                meusServicos?.append(contrato)
+            }
+        }
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
