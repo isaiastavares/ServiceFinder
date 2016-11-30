@@ -8,22 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		3FB696CE1DEE47AF00BCCAD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB696CD1DEE47AF00BCCAD3 /* AppDelegate.swift */; };
-		3FB696D01DEE47AF00BCCAD3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB696CF1DEE47AF00BCCAD3 /* ViewController.swift */; };
 		3FB696D31DEE47AF00BCCAD3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FB696D11DEE47AF00BCCAD3 /* Main.storyboard */; };
 		3FB696D61DEE47AF00BCCAD3 /* ServiceFinder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3FB696D41DEE47AF00BCCAD3 /* ServiceFinder.xcdatamodeld */; };
 		3FB696D81DEE47AF00BCCAD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FB696D71DEE47AF00BCCAD3 /* Assets.xcassets */; };
 		3FB696DB1DEE47AF00BCCAD3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FB696D91DEE47AF00BCCAD3 /* LaunchScreen.storyboard */; };
+		3FB696E81DEE4D1200BCCAD3 /* ServicosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB696E71DEE4D1200BCCAD3 /* ServicosTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3FB696CA1DEE47AF00BCCAD3 /* ServiceFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ServiceFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FB696CD1DEE47AF00BCCAD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3FB696CF1DEE47AF00BCCAD3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3FB696D21DEE47AF00BCCAD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3FB696D51DEE47AF00BCCAD3 /* ServiceFinder.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ServiceFinder.xcdatamodel; sourceTree = "<group>"; };
 		3FB696D71DEE47AF00BCCAD3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3FB696DA1DEE47AF00BCCAD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3FB696DC1DEE47AF00BCCAD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FB696E71DEE4D1200BCCAD3 /* ServicosTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicosTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +56,47 @@
 		3FB696CC1DEE47AF00BCCAD3 /* ServiceFinder */ = {
 			isa = PBXGroup;
 			children = (
-				3FB696CD1DEE47AF00BCCAD3 /* AppDelegate.swift */,
-				3FB696CF1DEE47AF00BCCAD3 /* ViewController.swift */,
-				3FB696D11DEE47AF00BCCAD3 /* Main.storyboard */,
-				3FB696D71DEE47AF00BCCAD3 /* Assets.xcassets */,
-				3FB696D91DEE47AF00BCCAD3 /* LaunchScreen.storyboard */,
-				3FB696DC1DEE47AF00BCCAD3 /* Info.plist */,
+				3FB696E61DEE4C9100BCCAD3 /* View */,
+				3FB696E51DEE4C8000BCCAD3 /* Controller */,
+				3FB696E31DEE4C6D00BCCAD3 /* Model */,
+				3FB696E21DEE4C6600BCCAD3 /* Supporting Files */,
 				3FB696D41DEE47AF00BCCAD3 /* ServiceFinder.xcdatamodeld */,
 			);
 			path = ServiceFinder;
+			sourceTree = "<group>";
+		};
+		3FB696E21DEE4C6600BCCAD3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3FB696CD1DEE47AF00BCCAD3 /* AppDelegate.swift */,
+				3FB696D71DEE47AF00BCCAD3 /* Assets.xcassets */,
+				3FB696DC1DEE47AF00BCCAD3 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3FB696E31DEE4C6D00BCCAD3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		3FB696E51DEE4C8000BCCAD3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3FB696E71DEE4D1200BCCAD3 /* ServicosTableViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		3FB696E61DEE4C9100BCCAD3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3FB696D11DEE47AF00BCCAD3 /* Main.storyboard */,
+				3FB696D91DEE47AF00BCCAD3 /* LaunchScreen.storyboard */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +170,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3FB696D01DEE47AF00BCCAD3 /* ViewController.swift in Sources */,
 				3FB696D61DEE47AF00BCCAD3 /* ServiceFinder.xcdatamodeld in Sources */,
 				3FB696CE1DEE47AF00BCCAD3 /* AppDelegate.swift in Sources */,
+				3FB696E81DEE4D1200BCCAD3 /* ServicosTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
