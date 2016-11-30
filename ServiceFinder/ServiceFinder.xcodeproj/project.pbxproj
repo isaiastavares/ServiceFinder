@@ -23,6 +23,7 @@
 		3FB878041DEF737300795ED3 /* PerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB878031DEF737300795ED3 /* PerfilViewController.swift */; };
 		3FB878061DEF748500795ED3 /* ServicoOfertadoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB878051DEF748500795ED3 /* ServicoOfertadoTableViewController.swift */; };
 		3FB878081DEF768800795ED3 /* ServicoOfertadoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB878071DEF768800795ED3 /* ServicoOfertadoTableViewCell.swift */; };
+		3FC2EA1E1DEF8E4500B38B6D /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC2EA1D1DEF8E4500B38B6D /* Data.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		3FB878031DEF737300795ED3 /* PerfilViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerfilViewController.swift; sourceTree = "<group>"; };
 		3FB878051DEF748500795ED3 /* ServicoOfertadoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicoOfertadoTableViewController.swift; sourceTree = "<group>"; };
 		3FB878071DEF768800795ED3 /* ServicoOfertadoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicoOfertadoTableViewCell.swift; sourceTree = "<group>"; };
+		3FC2EA1D1DEF8E4500B38B6D /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				3FB877F71DEF6E2E00795ED3 /* Usuario.swift */,
 				3FB877F91DEF6E6800795ED3 /* Endereco.swift */,
 				3FB877FB1DEF6E7D00795ED3 /* Contrato.swift */,
+				3FC2EA1D1DEF8E4500B38B6D /* Data.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -207,6 +210,7 @@
 				3FB696CE1DEE47AF00BCCAD3 /* AppDelegate.swift in Sources */,
 				3FB878061DEF748500795ED3 /* ServicoOfertadoTableViewController.swift in Sources */,
 				3FB877FE1DEF704500795ED3 /* ServicoTableViewCell.swift in Sources */,
+				3FC2EA1E1DEF8E4500B38B6D /* Data.swift in Sources */,
 				3FB878081DEF768800795ED3 /* ServicoOfertadoTableViewCell.swift in Sources */,
 				3FB878041DEF737300795ED3 /* PerfilViewController.swift in Sources */,
 				3FB696E81DEE4D1200BCCAD3 /* ServicoTableViewController.swift in Sources */,
