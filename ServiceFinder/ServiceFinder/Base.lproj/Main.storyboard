@@ -225,13 +225,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="3EG-lb-9IV" userLabel="Campos Stack View">
-                                <rect key="frame" x="0.0" y="239" width="775" height="21"/>
+                                <rect key="frame" x="0.0" y="239" width="689" height="49"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="bF2-dM-Jnd" userLabel="Email Stack View">
-                                        <rect key="frame" x="0.0" y="0.0" width="158" height="21"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="158" height="49"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Email:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lHU-qg-9zn">
-                                                <rect key="frame" x="0.0" y="0.0" width="46" height="21"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="46" height="49"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
@@ -240,7 +240,7 @@
                                                 </variation>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Email Usuário" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bae-NT-1xf">
-                                                <rect key="frame" x="54" y="0.0" width="105" height="21"/>
+                                                <rect key="frame" x="54" y="0.0" width="105" height="49"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
@@ -254,10 +254,10 @@
                                         </variation>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="IOo-Vd-CFA" userLabel="Telefone Stack View">
-                                        <rect key="frame" x="174" y="0.0" width="208" height="21"/>
+                                        <rect key="frame" x="174" y="0.0" width="208" height="49"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Telefone:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AWR-ZX-BfJ">
-                                                <rect key="frame" x="0.0" y="0.0" width="71" height="21"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="71" height="49"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
@@ -266,7 +266,7 @@
                                                 </variation>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Telefone Usuário" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aul-Ft-L6f">
-                                                <rect key="frame" x="79" y="0.0" width="129" height="21"/>
+                                                <rect key="frame" x="79" y="0.0" width="129" height="49"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
@@ -280,10 +280,10 @@
                                         </variation>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="cQB-jm-J5s" userLabel="CPF Stack View">
-                                        <rect key="frame" x="398" y="0.0" width="140" height="21"/>
+                                        <rect key="frame" x="398" y="0.0" width="140" height="49"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="CPF:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DNv-mf-7YL">
-                                                <rect key="frame" x="0.0" y="0.0" width="37" height="21"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="37" height="49"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
@@ -292,7 +292,7 @@
                                                 </variation>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="CPF Usuário" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w1g-P1-VQz">
-                                                <rect key="frame" x="45" y="0.0" width="95" height="21"/>
+                                                <rect key="frame" x="45" y="0.0" width="95" height="49"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
@@ -306,10 +306,10 @@
                                         </variation>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="xxR-7X-em6" userLabel="Endereço Stack View">
-                                        <rect key="frame" x="553" y="0.0" width="222" height="21"/>
+                                        <rect key="frame" x="553" y="0.0" width="136" height="49"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Endereço:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ag6-hu-QdA">
-                                                <rect key="frame" x="0.0" y="0.0" width="78" height="21"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="136" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
@@ -318,7 +318,7 @@
                                                 </variation>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Endereço Usuário" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sEK-76-je4">
-                                                <rect key="frame" x="86" y="0.0" width="136" height="21"/>
+                                                <rect key="frame" x="0.0" y="29" width="136" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
@@ -332,9 +332,7 @@
                                         </variation>
                                     </stackView>
                                 </subviews>
-                                <variation key="heightClass=regular-widthClass=compact" alignment="top" axis="vertical" misplaced="YES">
-                                    <rect key="frame" x="20" y="331" width="360" height="159"/>
-                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" alignment="top" axis="vertical"/>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -342,7 +340,7 @@
                             <constraint firstItem="3EG-lb-9IV" firstAttribute="leading" secondItem="rDy-uo-1Ic" secondAttribute="leadingMargin" id="8v3-Dz-5Mp"/>
                             <constraint firstAttribute="trailingMargin" secondItem="3EG-lb-9IV" secondAttribute="trailing" id="CLc-xf-WhJ"/>
                             <constraint firstItem="3EG-lb-9IV" firstAttribute="top" secondItem="UDC-6I-m5g" secondAttribute="bottom" constant="8" id="DOn-Ez-Iri">
-                                <variation key="heightClass=regular-widthClass=compact" constant="80"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="50"/>
                             </constraint>
                             <constraint firstItem="RFi-ZY-dTb" firstAttribute="top" secondItem="kvp-e5-kat" secondAttribute="bottom" constant="8" id="EAp-6q-wch"/>
                             <constraint firstItem="UDC-6I-m5g" firstAttribute="leading" secondItem="rDy-uo-1Ic" secondAttribute="leadingMargin" id="N5b-8V-Jt6"/>

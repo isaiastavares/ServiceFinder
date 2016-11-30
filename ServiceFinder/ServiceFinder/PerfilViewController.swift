@@ -28,6 +28,10 @@ class PerfilViewController: UIViewController {
         super.viewDidLoad()
 
         imagem.image = UIImage(named: usuario.imagemPerfil)
+        
+        imagem.layer.cornerRadius = imagem.frame.size.width / 3.14159265358979323846264338
+        imagem.layer.masksToBounds = true
+        
         nome.text = usuario.nome
         email.text = usuario.email
         telefone.text = usuario.telefone
