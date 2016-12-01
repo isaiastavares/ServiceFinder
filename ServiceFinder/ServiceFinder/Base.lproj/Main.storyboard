@@ -600,7 +600,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="minhaAgendaIdentifier" rowHeight="140" id="KHk-8T-nqN" customClass="MinhaAgendaTableViewCell" customModule="ServiceFinder" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="minhaAgendaPrestadorIdentifier" rowHeight="140" id="KHk-8T-nqN" customClass="MinhaAgendaTableViewCell" customModule="ServiceFinder" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="92" width="600" height="140"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KHk-8T-nqN" id="fcW-1d-qn4">
@@ -665,8 +665,83 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="categoria" destination="3oR-XK-o24" id="7Jl-sa-Aki"/>
+                                    <outlet property="contratante_categoria" destination="iBl-V1-Mw7" id="Pgj-fr-hrJ"/>
+                                    <outlet property="contratante_data" destination="GBl-qX-fwa" id="w7v-Lo-Rkm"/>
+                                    <outlet property="contratante_usuario" destination="iBl-V1-Mw7" id="0L2-sq-pnO"/>
                                     <outlet property="data" destination="GBl-qX-fwa" id="9qE-15-QO9"/>
                                     <outlet property="usuario" destination="iBl-V1-Mw7" id="pYj-PG-E75"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="minhaAgendaServicoIdentifier" rowHeight="140" id="m8j-nP-5xb" customClass="MinhaAgendaTableViewCell" customModule="ServiceFinder" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="600" height="140"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="m8j-nP-5xb" id="vdZ-K9-epv">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="139.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="6HW-uw-XUk" userLabel="Agenda Stack View">
+                                            <rect key="frame" x="-12" y="-20" width="131" height="137"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Categoria" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="81L-jy-VCP">
+                                                    <rect key="frame" x="0.0" y="0.0" width="75" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.72024947399999995" green="0.1655668616" blue="0.07576464862" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                                        <rect key="frame" x="0.0" y="0.0" width="384" height="21"/>
+                                                    </variation>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Usuario" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cek-5X-41M">
+                                                    <rect key="frame" x="83" y="0.0" width="59" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.39533871409999999" green="0.39566129449999998" blue="0.39538863299999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                                        <rect key="frame" x="0.0" y="29" width="384" height="21"/>
+                                                    </variation>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Data e Hora" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3hd-4q-42s">
+                                                    <rect key="frame" x="150" y="0.0" width="91" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.40349921579999998" green="0.40382760760000003" blue="0.40355005859999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                                        <rect key="frame" x="0.0" y="57" width="384" height="21"/>
+                                                    </variation>
+                                                </label>
+                                            </subviews>
+                                            <variation key="heightClass=regular-widthClass=compact" axis="vertical" misplaced="YES">
+                                                <rect key="frame" x="8" y="16" width="384" height="78"/>
+                                            </variation>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="6HW-uw-XUk" firstAttribute="top" secondItem="vdZ-K9-epv" secondAttribute="topMargin" constant="8" id="FDz-Kc-lpw"/>
+                                        <constraint firstItem="6HW-uw-XUk" firstAttribute="leading" secondItem="vdZ-K9-epv" secondAttribute="leadingMargin" id="IzS-I0-VWY"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="6HW-uw-XUk" secondAttribute="trailing" id="laA-Sy-S2T"/>
+                                    </constraints>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="FDz-Kc-lpw"/>
+                                            <exclude reference="IzS-I0-VWY"/>
+                                            <exclude reference="laA-Sy-S2T"/>
+                                        </mask>
+                                    </variation>
+                                    <variation key="heightClass=regular-widthClass=compact">
+                                        <mask key="constraints">
+                                            <include reference="FDz-Kc-lpw"/>
+                                            <include reference="IzS-I0-VWY"/>
+                                            <include reference="laA-Sy-S2T"/>
+                                        </mask>
+                                    </variation>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="categoria" destination="81L-jy-VCP" id="Z1r-fG-W9w"/>
+                                    <outlet property="data" destination="81L-jy-VCP" id="QNv-pp-7TG"/>
+                                    <outlet property="prestador_categoria" destination="81L-jy-VCP" id="T0Y-Dx-F6M"/>
+                                    <outlet property="prestador_data" destination="3hd-4q-42s" id="6Kk-tK-brS"/>
+                                    <outlet property="prestador_usuario" destination="Cek-5X-41M" id="Mh3-3C-v1Y"/>
+                                    <outlet property="usuario" destination="Cek-5X-41M" id="lCS-9R-zlQ"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

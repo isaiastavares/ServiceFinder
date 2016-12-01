@@ -10,10 +10,18 @@ import UIKit
 
 class MinhaAgendaTableViewCell: UITableViewCell {
     
+    @IBOutlet weak var contratante_categoria: UILabel!
     
-    @IBOutlet weak var categoria: UILabel!
+    @IBOutlet weak var contratante_usuario: UILabel!
     
-    @IBOutlet weak var usuario: UILabel!
+    @IBOutlet weak var contratante_data: UILabel!
     
-    @IBOutlet weak var data: UILabel!
+    
+    
+    @IBOutlet weak var prestador_categoria: UILabel!
+    
+    @IBOutlet weak var prestador_usuario: UILabel!
+    
+    @IBOutlet weak var prestador_data: UILabel!
+    
 }

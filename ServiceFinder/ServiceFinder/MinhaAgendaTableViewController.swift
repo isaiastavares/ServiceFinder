@@ -8,12 +8,15 @@
 
 import UIKit
 
+let CONTRATO = 0
+let SERVICO = 1
+
 class MinhaAgendaTableViewController: UITableViewController {
     
     var contratos: [Contrato]?
-    var minhasContratacoes: [Contrato]?
-    var meusServicos: [Contrato]?
 
+    var dados: [[Contrato]] = [[], []]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -23,15 +26,15 @@ class MinhaAgendaTableViewController: UITableViewController {
         
         for contrato in self.contratos!{
             if (contrato.contratante === usuarioAtual){
-                self.minhasContratacoes?.append(contrato)
+                self.dados[CONTRATO].append(contrato)
             }
             if (contrato.servico.usuario === usuarioAtual){
-                self.meusServicos?.append(contrato)
+                self.dados[SERVICO].append(contrato)
             }
         }
         
-        minhasContratacoes?.sortInPlace({ $0.data > $1.data })
-        meusServicos?.sortInPlace({ $0.data > $1.data })
+        self.dados[CONTRATO].sortInPlace({ $0.data > $1.data })
+        self.dados[SERVICO].sortInPlace({ $0.data > $1.data })
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -49,24 +52,40 @@ class MinhaAgendaTableViewController: UITableViewController {
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 1
+        print("sections = ", dados.count)
+        return dados.count
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return (self.contratos?.count)!
+        print("rows = ", dados[section].count)
+        return self.dados[section].count
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("minhaAgendaIdentifier", forIndexPath: indexPath) as! MinhaAgendaTableViewCell
-    
-        let contrato = self.contratos?[indexPath.row]
         
-        cell.data.text = contrato?.data.toString()
-        cell.categoria.text = contrato?.servico.categoria
-        cell.usuario.text = contrato?.contratante.nome
+        if indexPath.section == CONTRATO {
+            let cell = tableView.dequeueReusableCellWithIdentifier("minhaAgendaContratoIdentifier", forIndexPath: indexPath) as! MinhaAgendaTableViewCell
+            
+            let contrato = self.dados[indexPath.section][indexPath.row]
         
-        return cell
+            cell.contratante_data.text = contrato.data.toString()
+            cell.contratante_categoria.text = contrato.servico.categoria
+            cell.contratante_usuario.text = contrato.contratante.nome
+            
+            return cell
+            
+        } else {
+            let cell = tableView.dequeueReusableCellWithIdentifier("minhaAgendaServicoIdentifier", forIndexPath: indexPath) as! MinhaAgendaTableViewCell
+            
+            let servico = self.dados[indexPath.section][indexPath.row]
+            
+            cell.prestador_data.text = servico.data.toString()
+            cell.prestador_categoria.text = servico.servico.categoria
+            cell.prestador_usuario.text = servico.contratante.nome
+            
+            return cell
+        }
     }
 
     /*
