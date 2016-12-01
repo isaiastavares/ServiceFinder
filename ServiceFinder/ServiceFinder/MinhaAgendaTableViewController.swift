@@ -21,8 +21,6 @@ class MinhaAgendaTableViewController: UITableViewController {
         
         self.contratos = Contrato.getLista()
         
-        
-        
         for contrato in self.contratos!{
             if (contrato.contratante === usuarioAtual){
                 self.minhasContratacoes?.append(contrato)
@@ -31,6 +29,9 @@ class MinhaAgendaTableViewController: UITableViewController {
                 self.meusServicos?.append(contrato)
             }
         }
+        
+        minhasContratacoes?.sortInPlace({ $0.data > $1.data })
+        meusServicos?.sortInPlace({ $0.data > $1.data })
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
