@@ -45,7 +45,7 @@ class Data : Comparable{
     }
     
     func toString() -> String {
-        return self.dia + "/" + self.mes + "/" + self.ano + "-" + self.hora + ":" + self.minuto
+        return "\(dia)/\(mes)/\(ano)-\(hora):\(minuto)"
     }
     
 }
