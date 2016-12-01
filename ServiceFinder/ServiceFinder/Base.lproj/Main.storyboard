@@ -176,10 +176,17 @@
             </objects>
             <point key="canvasLocation" x="-291" y="-248.25"/>
         </scene>
+<<<<<<< HEAD
         <!--Meus Serviços-->
         <scene sceneID="7hN-7J-bAp">
             <objects>
                 <tableViewController title="Meus Serviços" id="zCV-lq-zwZ" customClass="MeusServicosTableViewController" customModule="ServiceFinder" sceneMemberID="viewController">
+=======
+        <!--Meus Servicos-->
+        <scene sceneID="7hN-7J-bAp">
+            <objects>
+                <tableViewController title="Avaliações" id="zCV-lq-zwZ" userLabel="Meus Servicos" customClass="MeusServicosTableViewController" customModule="ServiceFinder" sceneMemberID="viewController">
+>>>>>>> origin/master
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="177" sectionHeaderHeight="28" sectionFooterHeight="28" id="AwQ-r5-SUy">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -193,10 +200,17 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="X2u-hO-KYm" userLabel="Meu Servico Stack View">
+<<<<<<< HEAD
                                             <rect key="frame" x="1" y="-12" width="10000" height="21"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Categoria" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jPp-Mj-hxw">
                                                     <rect key="frame" x="0.0" y="0.0" width="77" height="21"/>
+=======
+                                            <rect key="frame" x="1" y="-12" width="20266" height="21"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Categoria" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jPp-Mj-hxw">
+                                                    <rect key="frame" x="0.0" y="0.0" width="10129" height="21"/>
+>>>>>>> origin/master
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -205,7 +219,11 @@
                                                     </variation>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Descrição" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ODX-sx-fJh">
+<<<<<<< HEAD
                                                     <rect key="frame" x="85" y="0.0" width="77" height="21"/>
+=======
+                                                    <rect key="frame" x="10137" y="0.0" width="10129" height="21"/>
+>>>>>>> origin/master
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -239,6 +257,10 @@
                                         </mask>
                                     </variation>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="categoria" destination="jPp-Mj-hxw" id="zda-jk-raS"/>
+                                    <outlet property="descricao" destination="ODX-sx-fJh" id="mF8-KA-rZo"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -481,7 +503,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="agendaIdentifier" rowHeight="140" id="KHk-8T-nqN" customClass="MinhaAgendaTableViewCell" customModule="ServiceFinder" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="minhaAgendaIdentifier" rowHeight="140" id="KHk-8T-nqN" customClass="MinhaAgendaTableViewCell" customModule="ServiceFinder" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="92" width="600" height="140"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KHk-8T-nqN" id="fcW-1d-qn4">
