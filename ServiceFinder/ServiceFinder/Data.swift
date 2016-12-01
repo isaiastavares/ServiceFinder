@@ -45,7 +45,7 @@ class Data : Comparable{
     }
     
     func normalizar(valor: Int) -> String {
-        return valor > 10 ? String(valor) : "0" + String(valor)
+        return valor >= 10 ? String(valor) : "0" + String(valor)
     }
     
     func toString() -> String {
