@@ -91,15 +91,14 @@ class ServicoTableViewController: UITableViewController {
     }
     */
 
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "mostrarDetalhesServico" {
-            if let viewDetalhes = segue.destinationViewController as? DetalhesServicoViewController {
-                let index = tableView.indexPathForSelectedRow?.row
-                viewDetalhes.servico = servicos[index!]
-            }
-        }
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }
+    */
 
 }
