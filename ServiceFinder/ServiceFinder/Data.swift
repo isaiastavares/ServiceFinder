@@ -44,6 +44,10 @@ class Data : Comparable{
         return self.minuto
     }
     
+    func toString() -> String {
+        return self.dia + "/" + self.mes + "/" + self.ano + "-" + self.hora + ":" + self.minuto
+    }
+    
 }
 
 func < (lhs: Data, rhs: Data) -> Bool {
