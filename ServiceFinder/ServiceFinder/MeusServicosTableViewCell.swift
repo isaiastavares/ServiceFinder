@@ -11,7 +11,7 @@ import UIKit
 class MeusServicosTableViewCell: UITableViewCell {
     
     
-    
-    
+    @IBOutlet weak var categoria: UILabel!
 
+    @IBOutlet weak var descricao: UILabel!
 }

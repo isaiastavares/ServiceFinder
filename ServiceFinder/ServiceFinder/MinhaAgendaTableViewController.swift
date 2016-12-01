@@ -57,7 +57,7 @@ class MinhaAgendaTableViewController: UITableViewController {
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("agendaIdentifier", forIndexPath: indexPath) as! MinhaAgendaTableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("minhaAgendaIdentifier", forIndexPath: indexPath) as! MinhaAgendaTableViewCell
     
         let contrato = self.contratos?[indexPath.row]
         
