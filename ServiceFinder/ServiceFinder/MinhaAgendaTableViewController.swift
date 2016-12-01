@@ -11,11 +11,26 @@ import UIKit
 class MinhaAgendaTableViewController: UITableViewController {
     
     var contratos: [Contrato]?
+    var minhasContratacoes: [Contrato]?
+    var meusServicos: [Contrato]?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let usuarioAtual = Usuario.getUsuario()
+        
         self.contratos = Contrato.getLista()
+        
+        
+        
+        for contrato in self.contratos!{
+            if (contrato.contratante === usuarioAtual){
+                self.minhasContratacoes?.append(contrato)
+            }
+            if (contrato.servico.usuario === usuarioAtual){
+                self.meusServicos?.append(contrato)
+            }
+        }
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -43,9 +58,13 @@ class MinhaAgendaTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("agendaIdentifier", forIndexPath: indexPath) as! MinhaAgendaTableViewCell
-
-        // Configure the cell...
-
+        
+        
+        /*
+        cell.data = self.meusServicos?[indexPath.row].data
+        cell.servico = self.meusServicos?[indexPath.row].servico
+        cell.contratante = self.meusServicos?[indexPath.row].contratante
+        */
         return cell
     }
 

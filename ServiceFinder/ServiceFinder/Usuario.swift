@@ -33,6 +33,7 @@ class Usuario {
     }
     
     static func getLista() -> [Usuario] {
+        
         let endereco = Endereco(rua: "Rua da Liberdade", complemento: "Cond. Res. Bem Viver", cep: "74703-210", bairro: "Vila Martins", cidade: "Goiânia", estado: "Goiás")
         
         let isaias = Usuario(imagemPerfil: "isaias", nome: "Isaias Tavares", email: "isaiasengsoft@gmail.com", telefone: "(62) 98266-4145", cpf: "043.962.081-38", endereco: endereco)
