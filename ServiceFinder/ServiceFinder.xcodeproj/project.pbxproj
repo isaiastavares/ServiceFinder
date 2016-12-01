@@ -21,8 +21,8 @@
 		3FB878001DEF727F00795ED3 /* MinhaAgendaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB877FF1DEF727F00795ED3 /* MinhaAgendaTableViewCell.swift */; };
 		3FB878021DEF72A900795ED3 /* MinhaAgendaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB878011DEF72A900795ED3 /* MinhaAgendaTableViewController.swift */; };
 		3FB878041DEF737300795ED3 /* PerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB878031DEF737300795ED3 /* PerfilViewController.swift */; };
-		3FB878061DEF748500795ED3 /* ServicoOfertadoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB878051DEF748500795ED3 /* ServicoOfertadoTableViewController.swift */; };
-		3FB878081DEF768800795ED3 /* ServicoOfertadoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB878071DEF768800795ED3 /* ServicoOfertadoTableViewCell.swift */; };
+		3FB878061DEF748500795ED3 /* MeusServicosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB878051DEF748500795ED3 /* MeusServicosTableViewController.swift */; };
+		3FB878081DEF768800795ED3 /* MeusServicosTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB878071DEF768800795ED3 /* MeusServicosTableViewCell.swift */; };
 		3FC2EA1E1DEF8E4500B38B6D /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC2EA1D1DEF8E4500B38B6D /* Data.swift */; };
 		3FE2FB4F1DF0C44F00CDECE0 /* DetalhesServicoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE2FB4E1DF0C44F00CDECE0 /* DetalhesServicoViewController.swift */; };
 /* End PBXBuildFile section */
@@ -44,8 +44,8 @@
 		3FB877FF1DEF727F00795ED3 /* MinhaAgendaTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinhaAgendaTableViewCell.swift; sourceTree = "<group>"; };
 		3FB878011DEF72A900795ED3 /* MinhaAgendaTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinhaAgendaTableViewController.swift; sourceTree = "<group>"; };
 		3FB878031DEF737300795ED3 /* PerfilViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerfilViewController.swift; sourceTree = "<group>"; };
-		3FB878051DEF748500795ED3 /* ServicoOfertadoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicoOfertadoTableViewController.swift; sourceTree = "<group>"; };
-		3FB878071DEF768800795ED3 /* ServicoOfertadoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicoOfertadoTableViewCell.swift; sourceTree = "<group>"; };
+		3FB878051DEF748500795ED3 /* MeusServicosTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeusServicosTableViewController.swift; sourceTree = "<group>"; };
+		3FB878071DEF768800795ED3 /* MeusServicosTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeusServicosTableViewCell.swift; sourceTree = "<group>"; };
 		3FC2EA1D1DEF8E4500B38B6D /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		3FE2FB4E1DF0C44F00CDECE0 /* DetalhesServicoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalhesServicoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -119,8 +119,8 @@
 				3FB877FF1DEF727F00795ED3 /* MinhaAgendaTableViewCell.swift */,
 				3FB878011DEF72A900795ED3 /* MinhaAgendaTableViewController.swift */,
 				3FB878031DEF737300795ED3 /* PerfilViewController.swift */,
-				3FB878051DEF748500795ED3 /* ServicoOfertadoTableViewController.swift */,
-				3FB878071DEF768800795ED3 /* ServicoOfertadoTableViewCell.swift */,
+				3FB878051DEF748500795ED3 /* MeusServicosTableViewController.swift */,
+				3FB878071DEF768800795ED3 /* MeusServicosTableViewCell.swift */,
 				3FB877FD1DEF704500795ED3 /* ServicoTableViewCell.swift */,
 			);
 			name = Controller;
@@ -211,10 +211,10 @@
 				3FB878001DEF727F00795ED3 /* MinhaAgendaTableViewCell.swift in Sources */,
 				3FB696D61DEE47AF00BCCAD3 /* ServiceFinder.xcdatamodeld in Sources */,
 				3FB696CE1DEE47AF00BCCAD3 /* AppDelegate.swift in Sources */,
-				3FB878061DEF748500795ED3 /* ServicoOfertadoTableViewController.swift in Sources */,
+				3FB878061DEF748500795ED3 /* MeusServicosTableViewController.swift in Sources */,
 				3FB877FE1DEF704500795ED3 /* ServicoTableViewCell.swift in Sources */,
 				3FC2EA1E1DEF8E4500B38B6D /* Data.swift in Sources */,
-				3FB878081DEF768800795ED3 /* ServicoOfertadoTableViewCell.swift in Sources */,
+				3FB878081DEF768800795ED3 /* MeusServicosTableViewCell.swift in Sources */,
 				3FB878041DEF737300795ED3 /* PerfilViewController.swift in Sources */,
 				3FE2FB4F1DF0C44F00CDECE0 /* DetalhesServicoViewController.swift in Sources */,
 				3FB696E81DEE4D1200BCCAD3 /* ServicoTableViewController.swift in Sources */,

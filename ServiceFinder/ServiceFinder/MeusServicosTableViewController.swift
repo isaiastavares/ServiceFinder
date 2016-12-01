@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ServicoOfertadoTableViewController: UITableViewController {
+class MeusServicosTableViewController: UITableViewController {
     
     var servicos: [Servico]?
 
@@ -42,7 +42,7 @@ class ServicoOfertadoTableViewController: UITableViewController {
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("servicoOfertadoIdentifier", forIndexPath: indexPath) as! ServicoTableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("meusServicosIdentifier", forIndexPath: indexPath) as! ServicoTableViewCell
 
         // Configure the cell...
 

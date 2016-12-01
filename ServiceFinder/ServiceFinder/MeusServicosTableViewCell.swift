@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ServicoOfertadoTableViewCell: UITableViewCell {
+class MeusServicosTableViewCell: UITableViewCell {
     
     
     
