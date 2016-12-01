@@ -26,22 +26,28 @@ class Servico {
     }
     
     static func getListaServicosBusca() -> [Servico] {
-        let usuario = Usuario.getUsuario()
         
-        let servico1 = Servico(usuario: usuario, categoria: "TI", descricao: "Formato PC", avaliacao: 4.5, valor: 180.00)
-        let servico2 = Servico(usuario: usuario, categoria: "Pedreiro", descricao: "Faço casas", avaliacao: 4.8, valor: 1000.00)
+        let usuarios = Usuario.getLista()
+        
+        let servico1 = Servico(usuario: usuarios[0], categoria: "TI", descricao: "Formato PC, notebook, limpo virus, faço backup e manutenções em aparelhos", avaliacao: 4.5, valor: 180.00)
+        let servico2 = Servico(usuario: usuarios[0], categoria: "Pedreiro", descricao: "Faço casas, paredes, robocos, azulejos e reformas em geral", avaliacao: 4.8, valor: 1000.00)
+        let servico3 = Servico(usuario: usuarios[1], categoria: "Diarista", descricao: "Formato PC", avaliacao: 3.2, valor: 150.00)
+        let servico4 = Servico(usuario: usuarios[2], categoria: "Encanador", descricao: "Faço casas", avaliacao: 2.3, valor: 600.00)
         
         return [
             servico1,
-            servico2
+            servico2,
+            servico3,
+            servico4
         ]
     }
     
     static func getListaServicosDoUsuario() -> [Servico] {
-        let usuario = Usuario.getUsuario()
         
-        let servico1 = Servico(usuario: usuario, categoria: "TI", descricao: "Formato PC", avaliacao: 4.5, valor: 180.00)
-        let servico2 = Servico(usuario: usuario, categoria: "Pedreiro", descricao: "Faço casas", avaliacao: 4.8, valor: 1000.00)
+        let usuarios = Usuario.getLista()
+        
+        let servico1 = Servico(usuario: usuarios[0], categoria: "TI", descricao: "Formato PC, notebook, limpo virus, faço backup e manutenções em aparelhos", avaliacao: 4.5, valor: 180.00)
+        let servico2 = Servico(usuario: usuarios[0], categoria: "Pedreiro", descricao: "Faço casas, paredes, robocos, azulejos e reformas em geral", avaliacao: 4.8, valor: 1000.00)
         
         return [
             servico1,
