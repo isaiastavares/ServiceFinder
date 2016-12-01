@@ -51,7 +51,7 @@ class ServicoTableViewController: UITableViewController {
         cell.nome.text = servico.usuario.nome
         cell.categoria.text = servico.categoria
         cell.descricao.text = servico.descricao
-        cell.valor.text = "\(servico.valor)"
+        cell.valor.text = "R$ \(servico.valor)"
         
         return cell
     }
