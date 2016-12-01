@@ -11,6 +11,8 @@ import UIKit
 class MinhaAgendaTableViewController: UITableViewController {
     
     var contratos: [Contrato]?
+    var minhasContratacoes: [Contrato]?
+    var meusServicos: [Contrato]?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,15 +21,14 @@ class MinhaAgendaTableViewController: UITableViewController {
         
         self.contratos = Contrato.getLista()
         
-        var minhasContratacoes: [Contrato]?
-        var meusServicos: [Contrato]?
+        
         
         for contrato in self.contratos!{
             if (contrato.contratante === usuarioAtual){
-                minhasContratacoes?.append(contrato)
+                self.minhasContratacoes?.append(contrato)
             }
             if (contrato.servico.usuario === usuarioAtual){
-                meusServicos?.append(contrato)
+                self.meusServicos?.append(contrato)
             }
         }
 
@@ -57,9 +58,13 @@ class MinhaAgendaTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("agendaIdentifier", forIndexPath: indexPath) as! MinhaAgendaTableViewCell
-
-        // Configure the cell...
-
+        
+        
+        /*
+        cell.data = self.meusServicos?[indexPath.row].data
+        cell.servico = self.meusServicos?[indexPath.row].servico
+        cell.contratante = self.meusServicos?[indexPath.row].contratante
+        */
         return cell
     }
 
