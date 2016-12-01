@@ -61,6 +61,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F160F7B1DF0DFD5005AA485 /* MeusServicos */ = {
+			isa = PBXGroup;
+			children = (
+				3FB878051DEF748500795ED3 /* MeusServicosTableViewController.swift */,
+				3FB878071DEF768800795ED3 /* MeusServicosTableViewCell.swift */,
+			);
+			name = MeusServicos;
+			sourceTree = "<group>";
+		};
+		3F160F7C1DF0DFE8005AA485 /* Servico */ = {
+			isa = PBXGroup;
+			children = (
+				3F160F7F1DF0E03D005AA485 /* DetalhesServico */,
+				3FB696E71DEE4D1200BCCAD3 /* ServicoTableViewController.swift */,
+				3FB877FD1DEF704500795ED3 /* ServicoTableViewCell.swift */,
+			);
+			name = Servico;
+			sourceTree = "<group>";
+		};
+		3F160F7D1DF0E001005AA485 /* MinhaAgenda */ = {
+			isa = PBXGroup;
+			children = (
+				3FB877FF1DEF727F00795ED3 /* MinhaAgendaTableViewCell.swift */,
+				3FB878011DEF72A900795ED3 /* MinhaAgendaTableViewController.swift */,
+			);
+			name = MinhaAgenda;
+			sourceTree = "<group>";
+		};
+		3F160F7E1DF0E02A005AA485 /* Perfil */ = {
+			isa = PBXGroup;
+			children = (
+				3FB878031DEF737300795ED3 /* PerfilViewController.swift */,
+			);
+			name = Perfil;
+			sourceTree = "<group>";
+		};
+		3F160F7F1DF0E03D005AA485 /* DetalhesServico */ = {
+			isa = PBXGroup;
+			children = (
+				3FE2FB4E1DF0C44F00CDECE0 /* DetalhesServicoViewController.swift */,
+			);
+			name = DetalhesServico;
+			sourceTree = "<group>";
+		};
 		3FB696C11DEE47AF00BCCAD3 = {
 			isa = PBXGroup;
 			children = (
@@ -114,14 +158,10 @@
 		3FB696E51DEE4C8000BCCAD3 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				3FE2FB4E1DF0C44F00CDECE0 /* DetalhesServicoViewController.swift */,
-				3FB696E71DEE4D1200BCCAD3 /* ServicoTableViewController.swift */,
-				3FB877FF1DEF727F00795ED3 /* MinhaAgendaTableViewCell.swift */,
-				3FB878011DEF72A900795ED3 /* MinhaAgendaTableViewController.swift */,
-				3FB878031DEF737300795ED3 /* PerfilViewController.swift */,
-				3FB878051DEF748500795ED3 /* MeusServicosTableViewController.swift */,
-				3FB878071DEF768800795ED3 /* MeusServicosTableViewCell.swift */,
-				3FB877FD1DEF704500795ED3 /* ServicoTableViewCell.swift */,
+				3F160F7E1DF0E02A005AA485 /* Perfil */,
+				3F160F7D1DF0E001005AA485 /* MinhaAgenda */,
+				3F160F7C1DF0DFE8005AA485 /* Servico */,
+				3F160F7B1DF0DFD5005AA485 /* MeusServicos */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
