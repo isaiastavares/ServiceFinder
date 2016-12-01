@@ -44,8 +44,11 @@ class MeusServicosTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("meusServicosIdentifier", forIndexPath: indexPath) as! MeusServicosTableViewCell
 
-        // Configure the cell...
+        let servico = servicos?[indexPath.row]
+        
+        cell.categoria.text = servico?.categoria
 
+        cell.descricao.text = servico?.descricao
         return cell
     }
 
