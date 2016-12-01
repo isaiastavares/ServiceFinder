@@ -44,8 +44,12 @@ class Data : Comparable{
         return self.minuto
     }
     
+    func normalizar(valor: Int) -> String {
+        return valor > 10 ? String(valor) : "0" + String(valor)
+    }
+    
     func toString() -> String {
-        return "\(dia)/\(mes)/\(ano)-\(hora):\(minuto)"
+        return "\(normalizar(dia))/\(normalizar(mes))/\(normalizar(ano))-\(normalizar(hora)):\(normalizar(minuto))"
     }
     
 }
