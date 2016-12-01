@@ -256,6 +256,9 @@
                                 <rect key="frame" x="534" y="7" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Novo"/>
+                                <connections>
+                                    <segue destination="fVV-aj-S3P" kind="show" id="pLh-2L-1LE"/>
+                                </connections>
                             </button>
                         </barButtonItem>
                     </navigationItem>
@@ -264,18 +267,76 @@
             </objects>
             <point key="canvasLocation" x="1531.5" y="132.75"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Novo Serviço-->
         <scene sceneID="Kp5-sv-TNe">
             <objects>
-                <tableViewController id="fVV-aj-S3P" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="zGB-Eh-qQ9">
+                <tableViewController id="fVV-aj-S3P" userLabel="Novo Serviço" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="203" sectionHeaderHeight="28" sectionFooterHeight="28" id="zGB-Eh-qQ9">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="a4h-V0-BYK">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="203" id="a4h-V0-BYK" userLabel="Novo Serviço Table View Cell">
+                                <rect key="frame" x="0.0" y="92" width="600" height="203"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="a4h-V0-BYK" id="lc8-lb-Y7E">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="202.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="iAU-SO-3LK">
+                                            <rect key="frame" x="1" y="5" width="137" height="165"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Categoria" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lzD-dX-J5H">
+                                                    <rect key="frame" x="20" y="20" width="97" height="30"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Descrição" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MKW-4K-cDe">
+                                                    <rect key="frame" x="20" y="69" width="97" height="30"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Valor" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OGs-UZ-lEU">
+                                                    <rect key="frame" x="20" y="115" width="97" height="30"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <variation key="heightClass=regular-widthClass=compact" axis="vertical"/>
+                                        </stackView>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x9w-Kp-HdI">
+                                            <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                            <state key="normal" title="Cadastrar Novo Serviço"/>
+                                            <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                                <rect key="frame" x="119" y="155" width="163" height="30"/>
+                                            </variation>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="iAU-SO-3LK" firstAttribute="leading" secondItem="lc8-lb-Y7E" secondAttribute="leadingMargin" id="HA1-aR-5fX"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="iAU-SO-3LK" secondAttribute="trailing" id="njJ-Rt-3hg"/>
+                                        <constraint firstItem="iAU-SO-3LK" firstAttribute="top" secondItem="lc8-lb-Y7E" secondAttribute="topMargin" constant="8" id="vAk-N5-4kB"/>
+                                    </constraints>
+                                    <variation key="default">
+                                        <mask key="subviews">
+                                            <exclude reference="x9w-Kp-HdI"/>
+                                        </mask>
+                                        <mask key="constraints">
+                                            <exclude reference="HA1-aR-5fX"/>
+                                            <exclude reference="njJ-Rt-3hg"/>
+                                            <exclude reference="vAk-N5-4kB"/>
+                                        </mask>
+                                    </variation>
+                                    <variation key="heightClass=regular-widthClass=compact">
+                                        <mask key="subviews">
+                                            <include reference="x9w-Kp-HdI"/>
+                                        </mask>
+                                        <mask key="constraints">
+                                            <include reference="HA1-aR-5fX"/>
+                                            <include reference="njJ-Rt-3hg"/>
+                                            <include reference="vAk-N5-4kB"/>
+                                        </mask>
+                                    </variation>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -288,6 +349,32 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J9j-W0-U6h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2353.5" y="132.75"/>
+        </scene>
+        <!--Root View Controller-->
+        <scene sceneID="wS0-U2-13F">
+            <objects>
+                <tableViewController id="ue2-2d-4hJ" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="fWd-mi-OvA">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="iKA-5U-JS2">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iKA-5U-JS2" id="Vrw-6F-DvE">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="ue2-2d-4hJ" id="kpj-1v-nHa"/>
+                            <outlet property="delegate" destination="ue2-2d-4hJ" id="3lb-hR-QWO"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="TWH-gF-eOe"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MKQ-fk-jv8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3471" y="244.5"/>
         </scene>
         <!--Perfil-->
         <scene sceneID="eDF-2r-x83">

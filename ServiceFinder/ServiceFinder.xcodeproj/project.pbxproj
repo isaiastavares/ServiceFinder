@@ -64,6 +64,7 @@
 		3F160F7B1DF0DFD5005AA485 /* MeusServicos */ = {
 			isa = PBXGroup;
 			children = (
+				3F160F801DF0E078005AA485 /* NovoServico */,
 				3FB878051DEF748500795ED3 /* MeusServicosTableViewController.swift */,
 				3FB878071DEF768800795ED3 /* MeusServicosTableViewCell.swift */,
 			);
@@ -103,6 +104,13 @@
 				3FE2FB4E1DF0C44F00CDECE0 /* DetalhesServicoViewController.swift */,
 			);
 			name = DetalhesServico;
+			sourceTree = "<group>";
+		};
+		3F160F801DF0E078005AA485 /* NovoServico */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = NovoServico;
 			sourceTree = "<group>";
 		};
 		3FB696C11DEE47AF00BCCAD3 = {
