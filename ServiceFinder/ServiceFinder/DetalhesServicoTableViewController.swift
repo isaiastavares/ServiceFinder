@@ -1,21 +1,17 @@
 //
-//  ServicosTableViewController.swift
+//  DetalhesServicoTableViewController.swift
 //  ServiceFinder
 //
-//  Created by Student on 11/29/16.
+//  Created by Student on 11/30/16.
 //  Copyright © 2016 ServiceFinder. All rights reserved.
 //
 
 import UIKit
 
-class ServicoTableViewController: UITableViewController {
-    
-    var servicos = [Servico]()
+class DetalhesServicoTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.servicos = Servico.getListaServicosBusca()
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -33,28 +29,23 @@ class ServicoTableViewController: UITableViewController {
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 1
+        return 0
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return self.servicos.count
+        return 0
     }
 
+    /*
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
 
-        let cell = tableView.dequeueReusableCellWithIdentifier("servicoIdentifier", forIndexPath: indexPath) as! ServicoTableViewCell
+        // Configure the cell...
 
-        let servico = self.servicos[indexPath.row]
-        
-        cell.imagem.image = UIImage(named: servico.usuario.imagemPerfil)
-        cell.nome.text = servico.usuario.nome
-        cell.categoria.text = servico.categoria
-        cell.descricao.text = servico.descricao
-        cell.valor.text = "\(servico.valor)"
-        
         return cell
     }
+    */
 
     /*
     // Override to support conditional editing of the table view.
@@ -91,15 +82,14 @@ class ServicoTableViewController: UITableViewController {
     }
     */
 
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "mostrarDetalhesServico" {
-            if let viewDetalhes = segue.destinationViewController as? DetalhesServicoViewController {
-                let index = tableView.indexPathForSelectedRow?.row
-                viewDetalhes.servico = servicos[index!]
-            }
-        }
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }
+    */
 
 }
