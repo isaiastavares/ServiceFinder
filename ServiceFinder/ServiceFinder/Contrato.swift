@@ -21,7 +21,7 @@ class Contrato {
     }
     
     static func getLista() -> [Contrato] {
-        let data = Data(dia: 2, mes: 12, ano: 2016)
+        let data = Data(dia: 2, mes: 12, ano: 2016, hora: 12, minuto: 00)
         let contrato1 = Contrato(contratante : Usuario.getLista()[1], servico: Servico.getListaServicosBusca()[1], data: data);
         
         return [

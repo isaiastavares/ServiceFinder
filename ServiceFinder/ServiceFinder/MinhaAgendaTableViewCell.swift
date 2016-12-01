@@ -11,9 +11,9 @@ import UIKit
 class MinhaAgendaTableViewCell: UITableViewCell {
     
     
-    @IBOutlet weak var data: UILabel!
+    @IBOutlet weak var categoria: UILabel!
     
-    @IBOutlet weak var servico: UILabel!
-
-    @IBOutlet weak var contratante: UILabel!
+    @IBOutlet weak var usuario: UILabel!
+    
+    @IBOutlet weak var data: UILabel!
 }

@@ -53,18 +53,18 @@ class MinhaAgendaTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return ( self.contratos?.count)!
+        return (self.contratos?.count)!
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("agendaIdentifier", forIndexPath: indexPath) as! MinhaAgendaTableViewCell
+    
+        let contrato = self.contratos?[indexPath.row]
         
+        cell.data.text = contrato?.data.toString()
+        cell.categoria.text = contrato?.servico.categoria
+        cell.usuario.text = contrato?.contratante.nome
         
-        /*
-        cell.data = self.meusServicos?[indexPath.row].data
-        cell.servico = self.meusServicos?[indexPath.row].servico
-        cell.contratante = self.meusServicos?[indexPath.row].contratante
-        */
         return cell
     }
 

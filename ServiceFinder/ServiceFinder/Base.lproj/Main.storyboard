@@ -145,6 +145,7 @@
                         <viewControllerLayoutGuide type="bottom" id="HgT-dK-wJI"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ceq-RC-VZF">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -419,19 +420,80 @@
         <!--Agendamento-->
         <scene sceneID="xep-1y-Xu0">
             <objects>
-                <tableViewController title="Agendamento" id="aLw-9j-GcR" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="8wF-1M-dTT">
+                <tableViewController title="Agendamento" id="aLw-9j-GcR" customClass="MinhaAgendaTableViewController" customModule="ServiceFinder" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="140" sectionHeaderHeight="28" sectionFooterHeight="28" id="8wF-1M-dTT">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KHk-8T-nqN">
-                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="agendaIdentifier" rowHeight="140" id="KHk-8T-nqN" customClass="MinhaAgendaTableViewCell" customModule="ServiceFinder" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="600" height="140"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KHk-8T-nqN" id="fcW-1d-qn4">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="139.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="w0I-G9-5DY" userLabel="Agenda Stack View">
+                                            <rect key="frame" x="-12" y="-20" width="131" height="137"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Categoria" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3oR-XK-o24">
+                                                    <rect key="frame" x="0.0" y="0.0" width="75" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.84579980373382568" green="0.77438086271286011" blue="0.064407728612422943" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                                        <rect key="frame" x="0.0" y="0.0" width="384" height="21"/>
+                                                    </variation>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Usuario" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iBl-V1-Mw7">
+                                                    <rect key="frame" x="83" y="0.0" width="59" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                                        <rect key="frame" x="0.0" y="29" width="384" height="21"/>
+                                                    </variation>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Data e Hora" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GBl-qX-fwa">
+                                                    <rect key="frame" x="150" y="0.0" width="91" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                                        <rect key="frame" x="0.0" y="57" width="384" height="21"/>
+                                                    </variation>
+                                                </label>
+                                            </subviews>
+                                            <variation key="heightClass=regular-widthClass=compact" axis="vertical" misplaced="YES">
+                                                <rect key="frame" x="8" y="16" width="384" height="78"/>
+                                            </variation>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="w0I-G9-5DY" firstAttribute="top" secondItem="fcW-1d-qn4" secondAttribute="topMargin" constant="8" id="0lf-rz-xtJ"/>
+                                        <constraint firstItem="w0I-G9-5DY" firstAttribute="leading" secondItem="fcW-1d-qn4" secondAttribute="leadingMargin" id="Jz3-A1-0Pa"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="w0I-G9-5DY" secondAttribute="trailing" id="hP8-wH-Bqc"/>
+                                    </constraints>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="0lf-rz-xtJ"/>
+                                            <exclude reference="Jz3-A1-0Pa"/>
+                                            <exclude reference="hP8-wH-Bqc"/>
+                                        </mask>
+                                    </variation>
+                                    <variation key="heightClass=regular-widthClass=compact">
+                                        <mask key="constraints">
+                                            <include reference="0lf-rz-xtJ"/>
+                                            <include reference="Jz3-A1-0Pa"/>
+                                            <include reference="hP8-wH-Bqc"/>
+                                        </mask>
+                                    </variation>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="categoria" destination="3oR-XK-o24" id="7Jl-sa-Aki"/>
+                                    <outlet property="data" destination="GBl-qX-fwa" id="9qE-15-QO9"/>
+                                    <outlet property="usuario" destination="iBl-V1-Mw7" id="pYj-PG-E75"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
