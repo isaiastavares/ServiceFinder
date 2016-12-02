@@ -56,6 +56,6 @@ func == (lhs: Usuario, rhs: Usuario) -> Bool {
         lhs.nome == rhs.nome &&
         lhs.email == rhs.email &&
         lhs.telefone == rhs.telefone &&
-        lhs.cpf == rhs.cpf &&
+        lhs.cpf == rhs.cpf
     
 }

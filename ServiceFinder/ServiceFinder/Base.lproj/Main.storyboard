@@ -160,7 +160,7 @@
             <objects>
                 <tabBarController id="q8B-Px-v8W" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="O9a-Nq-fR1"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="qbw-QT-I3G">
+                    <tabBar key="tabBar" contentMode="scaleToFill" backgroundImage="backbee" id="qbw-QT-I3G">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -673,7 +673,7 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="minhaAgendaServicoIdentifier" rowHeight="140" id="m8j-nP-5xb" customClass="MinhaAgendaTableViewCell" customModule="ServiceFinder" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="92" width="600" height="140"/>
+                                <rect key="frame" x="0.0" y="232" width="600" height="140"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="m8j-nP-5xb" id="vdZ-K9-epv">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="139.5"/>
@@ -834,6 +834,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="backbee" width="375" height="667"/>
         <image name="cadastra" width="25" height="25"/>
         <image name="cadastra-red" width="25" height="25"/>
         <image name="calendar" width="25" height="25"/>
